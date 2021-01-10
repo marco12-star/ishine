@@ -115,6 +115,9 @@ button.btn:hover {
 		.overlayMenu ul li {
 		    padding: 0;
 		}
+		.hover__link::after {
+		    display: none;
+		}
 		/*mobile navigation*/
 			.navBurger {
 			 position: fixed;
