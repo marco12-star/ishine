@@ -1074,6 +1074,7 @@ button.btn:hover {
 			.footer__info.flex {
 			    flex-wrap: wrap;
 			    width: 50%;
+			    justify-content: center;
 			}
 			footer address {
 				width: 100%;
@@ -1083,13 +1084,13 @@ button.btn:hover {
 			}
 			.footer__info {
 			    flex-wrap: wrap;
+			    justify-content: center;
 			}
 			footer p {
 			    margin: 0 16%;
 			}
-			footer .footer__info img {
-			    margin: 0 auto;
-			    margin-top: 10px;
+			footer .footer__info > span {
+			    margin-top: 15px;
 			}
 		}
 		@media all and (max-width: 420px) {
@@ -1109,3 +1110,456 @@ button.btn:hover {
 		}
 	/*footer*/
 /*HOME*/
+/*BOOK NOW PAGE */
+	/*order*/
+		.page__wrapper {
+			width: 1215px;
+			margin: 0 auto;
+			display: flex;
+		}
+		section.order {
+		    padding-top: 49px;
+		    padding-bottom: 21.9rem;
+		    margin-right: 5.3rem;
+		}
+		section.order .container-order{
+		    width: 100%;
+		    margin: 0 auto;
+		}
+		section.order .container-order p{
+		   margin-bottom: 0;
+		}
+		.order h2 {
+			font-weight: 600;
+			font-size: 24px;
+			text-align-last: left;
+			margin-bottom: 37px;
+		}
+		.order > p {
+			font-size: 14px;
+			text-transform: capitalize;
+			color: #242424;
+		}
+		.order > p a{
+			color: #006EAC;
+		}
+		.order__form h6 {
+			margin-top: 38px;
+			margin-bottom: 12px;
+			color: #006EAC;
+			font-weight: 500;
+			font-size: 14px;
+			text-transform: capitalize;
+		}
+		.order__form h6:nth-child(1) {
+			margin-top: 10px;
+		}
+		.form__row {
+		    display: flex;
+		    margin-top: 13px;
+		}
+		.form__row .input-group {
+		    width: 332px;
+		    height: 47px;
+		    padding: 0 15px;
+		    border: 1px solid #D7D7D7;
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+		}
+		.form__row .input-group:nth-child(1),
+		.form__row .input-group.card__info:nth-child(2) {
+			margin-right: 12px;
+		}
+		.form__row .input-group input{
+			outline: none;
+		    border: 0;
+		}
+		input::-webkit-input-placeholder {
+			font-size: 14px;
+			color: #5A5A5A;
+		}
+		input::-moz-placeholder          {
+			font-size: 14px;
+			color:#5A5A5A;
+		}
+		input:-moz-placeholder           {
+			font-size: 14px;
+			color:#5A5A5A;
+		}
+		input:-ms-input-placeholder      {
+			font-size: 14px;
+			color:#5A5A5A;
+		}
+		button.dropdown-toggle.dropdown-toggle-split {
+		    width: 100%;
+		    height: 100%;
+		    display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+		    background: transparent;
+		    border: 0;
+		    font-size: 14px;
+			font-weight: 300;
+			color: #5A5A5A;
+			outline: none;
+		}
+		.dropdown-toggle::after {
+			display: none !important;
+		}
+		ul.dropdown-menu.show {
+		    width: 100%;
+		    transform: translate(0px, 45px) !important;
+		    border-radius: 0;
+		}
+		span.input-group-addon {
+		    cursor: pointer;
+		}
+		.input-group.order__address:nth-child(1) {
+			width: 519px;
+		}
+		.input-group.order__address:nth-child(2) {
+			width: 145px;
+		}
+		.input-group.order__address input,
+		.input-group.order__contact input,
+		.input-group.order__type input
+		 {
+		    width: 100%;
+		}
+		.form__row .input-group.order__contact:nth-child(1) {
+			width: 213px;
+		}
+		.form__row .input-group.order__contact:nth-child(2) {
+			width: 262px;
+		}
+		.form__row .input-group.order__contact:nth-child(3) {
+			width: 176px;
+		}
+		.form__row .input-group.order__contact:nth-child(1),
+		.form__row .input-group.order__contact:nth-child(2)
+		{
+			margin-right: 12px;
+		}
+		.form__row .input-group.order__type:nth-child(1)
+		{
+			width: 273px;
+		}
+		.form__row .input-group.order__type:nth-child(2)
+		{
+			width: 203px;
+			margin-right: 12px;
+		}
+		.form__row .input-group.order__type:nth-child(3)
+		{
+			width: 173px;
+		}
+		button.btn-group.form__extra.input-group {
+			width: 217px;
+		    background: transparent;
+		    font-weight: 300;
+			font-size: 14px;
+			color: #5A5A5A;
+			justify-content: start;
+		}
+		button.btn-group.form__extra.input-group:nth-child(2) {
+			margin-right: 12px;
+		}
+		.form__extra img {
+		    margin-right: 15px;
+		}
+		button.btn-group.form__extra.input-group span > span {
+		    font-weight: 500;
+		    display: block;
+		    text-align: start;
+		}
+		button.form__extra span.plus::before {
+		    content: '';
+		    width: 10px;
+		    height: 1px;
+		    background: #006EAC;
+		    position: absolute;
+		    top: 50%;
+		    right: 5%;
+		}
+		button.form__extra span.plus::after {
+		    content: '';
+		    width: 10px;
+		    height: 1px;
+		    background: #006EAC;
+		    position: absolute;
+		    top: 50%;
+		    right: 5%;
+		    transform: rotate(90deg);
+		}
+		span.plus {
+		    width: 22px;
+		    height: 46px;
+		    border-left: 1px solid #D7D7D7;
+		    margin-left: auto;
+		}
+		/*payment*/
+		.order__form .pay__head {
+			display: flex;
+			margin-top: 42px;
+			margin-bottom: 17px;
+		}
+		.order__form .pay__head::before {
+		    content: '';
+		    width: 84%;
+		    height: 1px;
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    background: #5A5A5A;
+		}
+		.order__form .pay__head h6 {
+			margin-top: 24px;
+		    margin-right: 41px;
+		}
+		.order__form .pay__head button {
+		    margin-top: 1rem;
+		    margin-right: 7px;
+		    background: transparent;
+		    border: 0;
+		}
+		.pay__head .input-group {
+		    width: 332px;
+		    height: 47px;
+		    padding: 0 15px;
+		    border: 1px solid #D7D7D7;
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+		}
+		.form__row .input-group.card__info input{
+		    width: 100%;
+		}
+		.form__row .input-group.card__info:nth-child(2), 
+		.form__row .input-group.card__info:nth-child(3) 
+		{
+			width: 160px;
+		}
+		.payment__time {
+		    display: flex;
+		    margin-bottom: 50px;
+		}
+		.pay__btn {
+		    width: 160px;
+		    height: 47px;
+		    margin-right: 11px;
+		    border: 1px solid #D7D7D7;
+		    display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+		    font-size: 14px;
+		    color: #5A5A5A;
+		    cursor: pointer;
+		    transition: .4s;
+		}
+		.pay__btn.selected {
+			color: #fff;
+			background: #F69A5B;
+		}
+		.pay__btn:hover {
+		    border: 1px solid #F69A5B;
+			box-shadow: 0px 5px 20px 1px rgba(246, 154, 91, 0.2);
+		}
+		.pay__btn span {
+		    background: #f69a5b;
+		    color: #fff;
+		    border-radius: 2px;
+		    text-align: center;
+		    font-size: 9.7px;
+		    padding: 1px 2px;
+		    transition: .4s;
+		}
+		.pay__btn span > span {
+		    display: block;
+		}
+		.pay__btn.selected span {
+		    background: #ffffff;
+		    color: #f69a5b;
+		}
+		.pay__total	span {
+			font-weight: 600;
+			font-size: 24px;
+			text-transform: capitalize;
+			color: #2F2F2F;
+		}
+		.pay__total {
+		    display: flex;
+		}
+		.pay__total span > span {
+			margin-left: 86px;
+		}
+		.pay__total button {
+			width: 403px;
+			height: 44px;
+			margin-left: 25px;
+			background: #C4C4C4;
+			border-radius: 2px;
+			border: none;
+			color: #fff;
+			cursor: default !important;
+		}
+		.pay__total button.allow {
+			background: #006CAE;
+			cursor: pointer;
+		}
+		.total__submit {
+		    text-align: center;
+		}
+		.terms {
+		    margin-left: 26px;
+		    width: 76%;
+		    margin: 12px auto;
+		    margin-left: 5rem;
+		    font-weight: 300;
+		    font-size: 13px;
+		    color: #5A5A5A;
+		    position: relative;
+		  display: block;
+		  position: relative;
+		  cursor: pointer;
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+
+		.terms input {
+		  position: absolute;
+		  opacity: 0;
+		  cursor: pointer;
+		  height: 0;
+		  width: 0;
+		}
+
+		.checkmark {
+			position: absolute;
+			top: 4px;
+		    left: 55px;
+			height: 14px;
+			width: 14px;
+			background-color: #eee;
+			background: #F2F5F6;
+			border: 1px solid #3089BB;
+			border-radius: 2px;
+		}
+
+		.terms:hover input ~ .checkmark {
+		  background-color: #ccc;
+		}
+
+		.terms input:checked ~ .checkmark {
+		  background-color: transparent;
+		}
+
+		.checkmark:after {
+		  content: "";
+		  position: absolute;
+		  display: none;
+		}
+		.terms input:checked ~ .checkmark:after {
+		  display: block;
+		}
+		.terms .checkmark:after {
+		  left: 4px;
+		  width: 5px;
+		  height: 10px;
+		  border: solid #3089BB;
+		  border-width: 0 2px 2px 0;
+		  -webkit-transform: rotate(45deg);
+		  -ms-transform: rotate(45deg);
+		  transform: rotate(45deg);
+		}
+		/*payment*/
+	/*order*/
+	/*sidebar*/
+		aside.result {
+			background: #F2F5F6;
+			width: 37%;
+		}
+		.container-result {
+		    width: 100%;
+		    padding: 45px 20px;
+		}
+		.container-result h3 {
+		    font-weight: 600;
+			font-size: 24px;
+			line-height: 36px;
+			text-transform: capitalize;
+			color: #2F2F2F;
+			margin-bottom: 95px;
+		}
+		.summary__group {
+		    display: flex;
+		    justify-content: space-between;  
+		    margin-top: 15px
+		}
+
+		.result__summary span {
+			width: 100%;
+			font-size: 14px;
+		    font-weight: 400;
+			text-transform: capitalize;
+			color: #5A5A5A;
+		}
+		.result__summary span > span {
+			margin-top: 10px;
+			display: block;
+			font-weight: 600;
+			font-size: 16px;
+			color: #242424;
+		}
+		.result__summary span > span.type {
+			width: 225px;
+			font-weight: 600;
+			font-size: 16px;
+			text-transform: capitalize;
+			color: #F69A5B;
+		}
+		.result__summary span > span.type > span{
+			display: inline;
+			font-size: 13px;
+			font-weight: 400;
+			color: #F69A5B;
+		}
+		.summary__check div {
+			margin: 5px 0;
+			display: flex;
+			justify-content: space-between;
+			font-size: 14px;
+			color: #000000;
+		}
+		.summary__check div.heading {
+			font-size: 16px;
+		}
+		.summary__check div.promo-code a{
+			color: #006DAC;
+		}
+		.summary__check div.promo-code {
+			padding: 10px 0;
+			border-top: 1px solid #C4C4C4;
+			border-bottom: 1px solid #C4C4C4;
+		}
+		.summary__check div.total {
+			background: #F69A5B;
+			text-transform: uppercase;
+			font-size: 18px;
+			color: #fff;
+			padding: 10px;
+		}
+		.summary__check div.total > span{
+			font-weight: 600;
+		}
+		.summary__check div.heading span{
+			font-weight: 500;
+		}
+		.summary__check div:nth-child(2) {
+			font-size: 16px;
+			color: #000000;
+		}
+	/*sidebar*/
+/*BOOK NOW PAGE */
