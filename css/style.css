@@ -317,7 +317,7 @@ button.btn:hover {
 	    width: 78%;
 	    margin: 10px auto;
 	}
-	.form-wrap .result__btn {
+	.form-wrap .result {
 	    width: 225px;
 	    cursor: default;
 	    border: 1px solid #D7D7D7;
@@ -431,6 +431,9 @@ button.btn:hover {
 			    justify-content: center;
 			    width: 80%;
 			}
+			.select.flex, .form__info.flex {
+			    width: 70%;
+			}
 		}
 		@media all and (max-width: 991px) {
 			.hero .hero__heading {
@@ -457,10 +460,20 @@ button.btn:hover {
 			.hero .hero__heading h3 {
 			    font-size: 18px;
 			}
+			.form-wrap span.result {
+			    width: 60%;
+			}
+			.select.flex,
+			.form__info.flex {
+			    width: 65%;
+			}
 		}
 		@media all and (max-width: 515px) {
 			.form-wrap {
 			    width: 90%;
+			}
+			.form__info button.btn {
+			    padding: 0px 12px;
 			}
 		}
 		@media all and (max-width: 430px) {
@@ -480,8 +493,11 @@ button.btn:hover {
 			.form__info span {
 			    font-size: 21px;
 			}
-			.form__info button.btn {
-			    padding: 0px 10px;
+			.select.flex {
+			    width: 80%;
+			}
+			.form__info.flex {
+			    width: 74%;
 			}
 		}
 	/*media*/
@@ -917,12 +933,6 @@ button.btn:hover {
 	@media all and (max-width: 768px){
 		.plans__item {
 		    width: 55%;
-		}
-		.select.city span {
-		    padding: 11px 75px
-		}
-		.select span {
-		        padding: 11px 94px;
 		}
 		.form .input-group-text, .select button {
 		    padding: 0px 16px;
