@@ -1300,6 +1300,7 @@ button.btn:hover {
 		}
 		/*payment*/
 		.order__form .pay__head {
+			position: relative;
 			display: flex;
 			margin-top: 42px;
 			margin-bottom: 17px;
