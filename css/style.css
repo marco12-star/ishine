@@ -1307,7 +1307,7 @@ button.btn:hover {
 		}
 		.order__form .pay__head::before {
 		    content: '';
-		    width: 84%;
+		    width: 99%;
 		    height: 1px;
 		    position: absolute;
 		    top: 0;
@@ -1496,12 +1496,11 @@ button.btn:hover {
 		}
 		.summary__group {
 		    display: flex;
-		    justify-content: space-between;  
 		    margin-top: 15px
 		}
 
 		.result__summary span {
-			width: 100%;
+			width: 50%;
 			font-size: 14px;
 		    font-weight: 400;
 			text-transform: capitalize;
@@ -1563,4 +1562,82 @@ button.btn:hover {
 			color: #000000;
 		}
 	/*sidebar*/
+	/*media*/
+		@media all and (max-width: 1300px) {
+			.page__wrapper {
+			    width: 100%;
+			}
+			section.order {
+				margin: 20px auto;
+			}
+		}
+		@media all and (max-width: 1200px) {
+			section.order {
+			    width: 65%;
+			}
+			.form__row {
+			    flex-wrap: wrap;
+			    justify-content: space-between;
+			}
+			.form__row .input-group {
+				width: 49%;
+			}
+			.input-group.order__address:nth-child(1) {
+				width: 75%;
+			}
+			.input-group.order__address:nth-child(2) {
+				width: 23%;
+			}
+			.form__row .input-group.order__contact:nth-child(1), 
+			.form__row .input-group.order__contact:nth-child(2),
+			.form__row .input-group.order__contact:nth-child(3),
+			button.btn-group.form__extra.input-group:nth-child(2),
+			.form__row .input-group.order__type:nth-child(2),
+			.form__row .input-group.order__type:nth-child(3),
+			.form__row .input-group:nth-child(1), 
+			.form__row .input-group.card__info:nth-child(2)  {
+				margin-right: 0;
+			}
+			.form__row .input-group.order__contact:nth-child(1), 
+			.form__row .input-group.order__contact:nth-child(2),
+			.form__row .input-group.order__contact:nth-child(3)
+			 {
+				width: 32%;
+				margin-right: 0;
+			}
+			.form__row .input-group.order__type:nth-child(1) {
+				width: 36%;
+			}
+			.form__row .input-group.order__type:nth-child(2),
+			.form__row .input-group.order__type:nth-child(3) {
+				width: 30%;
+			}
+			button.btn-group.form__extra.input-group {
+				width: 32%;
+			}
+			.total__submit {
+			    margin-left: 45px;
+			}
+			aside.result {
+			    width: 30%;
+			}
+			.container-result h3 {
+				margin-bottom: 10px;
+			    font-size: 18px;
+			    text-align: center;
+			}
+			.summary__group {
+				flex-wrap: wrap;
+			}
+			.result__summary span {
+				width: 100%;
+			}
+			.result__summary span > span {
+				margin-top: 5px;
+			}
+			.pay__total span > span {
+			    margin-left: 41px;
+			}
+		}
+	/*media*/
 /*BOOK NOW PAGE */
