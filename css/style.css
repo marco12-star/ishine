@@ -312,7 +312,7 @@ button.btn:hover {
 	    padding-top: 27px;
 	    padding-bottom: 13px;
 	}
-	.select-group.flex,
+	.select.flex,
 	.form__info.flex {
 	    width: 78%;
 	    margin: 10px auto;
@@ -427,7 +427,7 @@ button.btn:hover {
 			    margin: 0 auto;
 			    margin-top: 25px;
 			}
-			.select-group.flex {
+			.select.flex {
 			    justify-content: center;
 			    width: 80%;
 			}
@@ -474,7 +474,7 @@ button.btn:hover {
 			    width: 100%;
 			    margin-top: 0px;
 			}
-			.select-group.flex, .form__info.flex {
+			.select.flex, .form__info.flex {
 			    padding-bottom: 0;
 			}
 			.form__info span {
@@ -918,13 +918,13 @@ button.btn:hover {
 		.plans__item {
 		    width: 55%;
 		}
-		.select-group.city span {
+		.select.city span {
 		    padding: 11px 75px
 		}
-		.select-group span {
+		.select span {
 		        padding: 11px 94px;
 		}
-		.form .input-group-text, .select-group button {
+		.form .input-group-text, .select button {
 		    padding: 0px 16px;
 		}
 	}
