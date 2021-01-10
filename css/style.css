@@ -317,7 +317,7 @@ button.btn:hover {
 	    width: 78%;
 	    margin: 10px auto;
 	}
-	.form-wrap button.result__btn {
+	.form-wrap .result__btn {
 	    width: 225px;
 	    cursor: default;
 	    border: 1px solid #D7D7D7;
@@ -326,7 +326,11 @@ button.btn:hover {
 	    border-radius: 0;
 	    background: transparent;
 	    white-space: nowrap;
-	}
+	    display: flex;
+	    justify-content: center;
+	    align-items: center; 
+	    text-transform: capitalize;
+	} 
 	.form-wrap .btn-group>.btn-group:not(:first-child), .btn-group>.btn:not(:first-child) {
 	    margin-left: 0 !important;
 	}
@@ -425,6 +429,7 @@ button.btn:hover {
 			}
 			.select-group.flex {
 			    justify-content: center;
+			    width: 80%;
 			}
 		}
 		@media all and (max-width: 991px) {
@@ -449,11 +454,13 @@ button.btn:hover {
 			.hero h1 span {
 			    display: block;
 			}
-			.form-wrap button.btn.result__btn {
-				width: 65%;
-			}
 			.hero .hero__heading h3 {
 			    font-size: 18px;
+			}
+		}
+		@media all and (max-width: 515px) {
+			.form-wrap {
+			    width: 90%;
 			}
 		}
 		@media all and (max-width: 430px) {
