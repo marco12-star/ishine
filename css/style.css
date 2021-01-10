@@ -110,7 +110,7 @@ button.btn:hover {
 			.navBurger {
 			 position: fixed;
 			 right: 20px;
-			 top: 20px;
+			 top: 30px;
 			 cursor: pointer;
 			 background: #111;
 			 box-sizing: border-box;
