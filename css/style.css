@@ -816,6 +816,14 @@ button.btn:hover {
 	    margin-right: 8rem;
 	}
 	/*media*/
+		@media all and (max-width: 1450px) {
+			a.carousel-control-prev {
+			    margin-left: 2rem;
+			}
+			a.carousel-control-next {
+			    margin-right: 2rem;
+			}
+		}
 		@media all and (max-width: 1400px) {
 			a.carousel-control-prev,
 			a.carousel-control-prev
