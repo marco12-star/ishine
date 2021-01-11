@@ -1845,19 +1845,23 @@ button.btn:hover {
 		background: #F2F5F6;
 		padding-bottom: 57px;
 	}
-	.callback h6 {
+	.callback h6,
+	.space h6 {
 	    font-weight: 600;
 	    text-align: center;
 	    font-size: 18px;
 	    margin-bottom: 13px;
 	}
-	.callback form {
+	.callback form,
+	.space form {
 	    width: 614px;
 	    margin: 0 auto;
 	    margin-top: 37px;
 	    text-align: center;
 	}
-	.callback form h6 {
+	.callback form h6,
+	.space form h6
+	 {
 	    font-weight: 500;
 		font-size: 14px;
 		text-transform: unset;
@@ -1882,7 +1886,7 @@ button.btn:hover {
 	.callback__row .bis__add:nth-child(3) input{
 		width: 200px;
 	} 
-	.callback__scale {
+	.callback__space {
 		width: 50%;
 	}
 	.callback__row .call__contact,

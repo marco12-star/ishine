@@ -129,7 +129,7 @@
 							<h6>Square footage (estimation)</h6>
 							<input type="text">
 						</div>
-						<div class="callback__item callback__scale">
+						<div class="callback__item callback__space">
 							<h6># of employees</h6>
 							<div class="btn-group input-group callback__contact-group">
 								<button type="button" class="dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
@@ -173,7 +173,6 @@
 			</div>
 		</section>
 	<!-- get a quote -->
-	
 	<!-- footer -->
 		<footer>
 			<div class="container">
@@ -214,6 +213,11 @@
 		    $("#navToggle").toggleClass("active");
 		    $(".overlay").toggleClass("open");
 		    $("body").toggleClass("locked");
+		});
+		$(document).ready(function(){
+		    $(".cercle").click(function(){
+		        $(".cercle2").toggleClass("anim1");		
+		    });
 		});
 	</script>
 </body>
