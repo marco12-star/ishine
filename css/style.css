@@ -1841,12 +1841,15 @@ button.btn:hover {
 	}
 	/*callback*/
 	.callback {
-		padding-top: 66px;
+		padding-top: 59px;
 		background: #F2F5F6;
+		padding-bottom: 57px;
 	}
 	.callback h6 {
 	    font-weight: 600;
 	    text-align: center;
+	    font-size: 18px;
+	    margin-bottom: 13px;
 	}
 	.callback form {
 	    width: 614px;
@@ -1857,7 +1860,7 @@ button.btn:hover {
 	.callback form h6 {
 	    font-weight: 500;
 		font-size: 14px;
-		text-transform: capitalize;
+		text-transform: unset;
 		color: #006EAC;
 		text-align-last: left;
 	}
@@ -1865,7 +1868,8 @@ button.btn:hover {
 		display: flex;
 		margin-top: 20px;
 	} 
-	.callback__row input{
+	.callback__row input,
+	.callback__contact-group{
 		width: 302px;
 		height: 47px;
 		margin-right: 11px;
@@ -1878,8 +1882,11 @@ button.btn:hover {
 	.callback__row .bis__add:nth-child(3) input{
 		width: 200px;
 	} 
+	.callback__scale {
+		width: 50%;
+	}
 	.callback__row .call__contact,
-	.callback__row .call__contact input{
+	.callback__contact-group {
 		width: 100%;
 	} 
 	.callback form button.btn {
@@ -1888,5 +1895,42 @@ button.btn:hover {
 		margin-top: 36px;
 		margin-bottom: 56px;
 	}
+	/*media*/
+		@media all and (max-width: 767px) {
+			.office-cleaning .container,
+			.callback .container {
+				max-width: 100%;
+			}
+			.callback form {
+				width: unset;
+			}
+			.callback__row {
+				justify-content: space-between;
+			}
+			.callback__item {
+			    width: 49%;
+			}
+			.callback__item.bis__add {
+			    width: 23%;
+			}
+			.callback__row input, 
+			.callback__contact-group,
+			.callback__row .bis__add:nth-child(3) input,
+			.callback__row .bis__add input {
+				width: 100%;
+			    margin-right: 0;
+			}
+		}
+		@media all and (max-width: 568px) {
+			.callback__row {
+				flex-wrap: wrap;
+			}
+			.callback__item,
+			.callback__item.bis__add  {
+			    width: 100%;
+			    margin: 11px auto;
+			}
+		}
+	/*media*/
 	/*callback*/
 /*OFFICE CLEANING*/
