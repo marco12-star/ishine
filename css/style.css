@@ -4,6 +4,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, a, button, span, ul li {
 	font-family: 'Poppins', sans-serif;
+	text-transform: capitalize;
 }
 .container h2,
 .container-fluid h2
@@ -37,7 +38,6 @@ button.btn:hover {
 			}
 			.header .container-fluid {
 				display: flex;
-			    width: 79%;
 			    justify-content: center;
 			}
 			a.brand img {
@@ -1113,18 +1113,18 @@ button.btn:hover {
 /*BOOK NOW PAGE */
 	/*order*/
 		.page__wrapper {
-			width: 1215px;
+			width: 1300px;
 			margin: 0 auto;
 			display: flex;
 		}
 		section.order {
 		    padding-top: 49px;
-		    padding-bottom: 21.9rem;
+		    padding-bottom: 22.2rem;
 		    margin-right: 5.3rem;
+	        margin-left: 44px;
 		}
 		section.order .container-order{
 		    width: 100%;
-		    margin: 0 auto;
 		}
 		section.order .container-order p{
 		   margin-bottom: 0;
@@ -1241,14 +1241,14 @@ button.btn:hover {
 		{
 			margin-right: 12px;
 		}
-		.form__row .input-group.order__type:nth-child(1)
-		{
-			width: 273px;
-		}
-		.form__row .input-group.order__type:nth-child(2)
+		.form__row .input-group.order__type
 		{
 			width: 203px;
 			margin-right: 12px;
+		}
+		.form__row .input-group.order__type:nth-child(1)
+		{
+			width: 273px;
 		}
 		.form__row .input-group.order__type:nth-child(3)
 		{
@@ -1307,7 +1307,7 @@ button.btn:hover {
 		}
 		.order__form .pay__head::before {
 		    content: '';
-		    width: 99%;
+		    width: 674px;
 		    height: 1px;
 		    position: absolute;
 		    top: 0;
@@ -1343,7 +1343,7 @@ button.btn:hover {
 		}
 		.payment__time {
 		    display: flex;
-		    margin-bottom: 50px;
+		    margin-bottom: 46px;
 		}
 		.pay__btn {
 		    width: 160px;
@@ -1382,11 +1382,12 @@ button.btn:hover {
 		    background: #ffffff;
 		    color: #f69a5b;
 		}
-		.pay__total	span {
+		.pay__total > span {
 			font-weight: 600;
 			font-size: 24px;
 			text-transform: capitalize;
 			color: #2F2F2F;
+			margin-top: 4px;
 		}
 		.pay__total {
 		    display: flex;
@@ -1402,9 +1403,9 @@ button.btn:hover {
 			border-radius: 2px;
 			border: none;
 			color: #fff;
-			cursor: default !important;
 		}
-		.pay__total button.allow {
+		.pay__total button:not(:disabled)
+		{
 			background: #006CAE;
 			cursor: pointer;
 		}
@@ -1412,13 +1413,9 @@ button.btn:hover {
 		    text-align: center;
 		}
 		.terms {
-		    margin-left: 26px;
 		    width: 76%;
-		    margin: 12px auto;
-		    margin-left: 5rem;
-		    font-weight: 300;
-		    font-size: 13px;
-		    color: #5A5A5A;
+		    margin: 8px auto;
+		    margin-left: 60px;
 		    position: relative;
 		  display: block;
 		  position: relative;
@@ -1428,7 +1425,12 @@ button.btn:hover {
 		  -ms-user-select: none;
 		  user-select: none;
 		}
-
+		.terms span:nth-child(1){
+		    font-weight: 300;
+		    font-size: 13px;
+		    color: #5A5A5A;
+		    margin-left: 27px;
+		}
 		.terms input {
 		  position: absolute;
 		  opacity: 0;
@@ -1439,8 +1441,8 @@ button.btn:hover {
 
 		.checkmark {
 			position: absolute;
-			top: 4px;
-		    left: 55px;
+			top: 5px;
+		    left: 52px;
 			height: 14px;
 			width: 14px;
 			background-color: #eee;
@@ -1484,30 +1486,32 @@ button.btn:hover {
 		}
 		.container-result {
 		    width: 100%;
-		    padding: 45px 20px;
+		    padding: 45px 40px;
 		}
 		.container-result h3 {
 		    font-weight: 600;
 			font-size: 24px;
-			line-height: 36px;
 			text-transform: capitalize;
 			color: #2F2F2F;
 			margin-bottom: 95px;
 		}
 		.summary__group {
 		    display: flex;
-		    margin-top: 15px
+		    margin-top: 28px
 		}
 
+		.result__summary {
+			margin-bottom: 69px;
+		}
 		.result__summary span {
-			width: 50%;
+			width: 44%;
 			font-size: 14px;
 		    font-weight: 400;
 			text-transform: capitalize;
 			color: #5A5A5A;
 		}
 		.result__summary span > span {
-			margin-top: 10px;
+			margin-top: 3px;
 			display: block;
 			font-weight: 600;
 			font-size: 16px;
@@ -1535,12 +1539,14 @@ button.btn:hover {
 		}
 		.summary__check div.heading {
 			font-size: 16px;
+			font-weight: 500;
 		}
 		.summary__check div.promo-code a{
 			color: #006DAC;
 		}
 		.summary__check div.promo-code {
-			padding: 10px 0;
+			padding: 8px 0;
+			margin-bottom: 10px;
 			border-top: 1px solid #C4C4C4;
 			border-bottom: 1px solid #C4C4C4;
 		}
@@ -1550,6 +1556,7 @@ button.btn:hover {
 			font-size: 18px;
 			color: #fff;
 			padding: 10px;
+			margin-top: 11px;
 		}
 		.summary__check div.total > span{
 			font-weight: 600;
@@ -1574,6 +1581,7 @@ button.btn:hover {
 		@media all and (max-width: 1200px) {
 			section.order {
 			    width: 65%;
+			    padding: 0;
 			}
 			.form__row {
 			    flex-wrap: wrap;
@@ -1608,15 +1616,41 @@ button.btn:hover {
 			.form__row .input-group.order__type:nth-child(1) {
 				width: 36%;
 			}
-			.form__row .input-group.order__type:nth-child(2),
+			.form__row .input-group.order__type,
 			.form__row .input-group.order__type:nth-child(3) {
 				width: 30%;
 			}
 			button.btn-group.form__extra.input-group {
 				width: 32%;
 			}
+			.order__form .pay__head::before {
+				width: 100%;
+			}
+			.payment__time {
+			    justify-content: space-between;
+			}
+			.pay__btn {
+			    width: 23%;
+			    margin-right: 0;
+			}
+			.form__row .input-group.card__info:nth-child(1) {
+				width: 55%;
+			}
+			.form__row .input-group.card__info:nth-child(2), 
+			.form__row .input-group.card__info:nth-child(3) {
+				width: 20%;
+			}
 			.total__submit {
-			    margin-left: 45px;
+			    margin-left: auto;
+				width: 370px;
+			    text-align: right;
+			}
+			.pay__total button {
+				width: 100%;
+				margin-left: 0;
+			}
+			.terms {
+				margin: 11px auto;
 			}
 			aside.result {
 			    width: 30%;
@@ -1637,6 +1671,116 @@ button.btn:hover {
 			}
 			.pay__total span > span {
 			    margin-left: 41px;
+			}
+		}
+		@media all and (max-width: 992px) {
+			.form__row .input-group.order__type:nth-child(1) {
+			    width: 48%;
+			}
+			.form__row .input-group.order__type,
+			.form__row .input-group.order__type:nth-child(3) {
+			    width: 48%;
+			    margin: 5px 0;
+			}
+			button.btn-group.form__extra.input-group {
+			    width: 49%;
+			    margin: 5px 0px;
+			    padding-right: 0;
+			}
+			.order__form .pay__head {
+			    margin-top: 15px;
+			}
+			.total__submit {
+				width: 340px;
+			}
+			.pay__total button {
+				width: 80%;
+			}
+			.pay__total span > span {
+				margin-left: 0;
+			}
+			.checkmark {
+				left: 30px;
+			}
+			.container-result {
+			    padding: 30px 15px;
+			}
+			.result__summary span > span.type {
+				width: 100%;
+			}
+			.result__summary span > span.type > span {
+				display: block;
+				margin: 0;
+			}
+		}
+		@media (max-width: 768px){
+			.form__row .input-group {
+			    width: 100%;
+			    margin: 5px auto;
+			}
+			.form__row .input-group.date input {
+				width: 40%;
+			}
+			.order__form h6 {
+				margin-top: 15px;
+			}
+			.input-group.order__address:nth-child(1),
+			.input-group.order__address:nth-child(2),
+			.form__row .input-group.order__contact:nth-child(1), 
+			.form__row .input-group.order__contact:nth-child(2), 
+			.form__row .input-group.order__contact:nth-child(3),
+			.form__row .input-group.order__type, 
+			.form__row .input-group.order__type:nth-child(1), 
+			.form__row .input-group.order__type:nth-child(3),
+			button.btn-group.form__extra.input-group,
+			.form__row .input-group.card__info:nth-child(1) {
+				width: 100%;
+			}
+			.form__row .input-group.card__info:nth-child(2), 
+			.form__row .input-group.card__info:nth-child(3) {
+				width: 49%;
+				margin: 11px 0;
+			}
+			span.plus {
+				width: 45px;
+			}
+			.order__form .pay__head {
+			    display: flex;
+			    flex-wrap: wrap;
+			}
+			.order__form .pay__head h6 {
+				width: 100%;
+			}
+			.payment__time,
+			.pay__total {
+				flex-wrap: wrap;
+			}
+			.pay__total button,
+			.terms {
+				width: 100%;
+			}
+			.checkmark {
+				left: 0;
+			}
+			.pay__btn {
+				width: 46%;
+				margin: 11px auto;
+			}
+			.total__submit {
+			    width: 100%;
+			    margin-top: 20px;
+			    text-align: center;
+			}
+			section.order {
+			    width: 43%;
+			}
+			aside.result {
+			    width: 45%;
+			}
+		}
+		@media (max-width: 567px) {
+			.pay__btn {
+				width: 100%;
 			}
 		}
 	/*media*/
